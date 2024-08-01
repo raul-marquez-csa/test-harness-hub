@@ -1,27 +1,50 @@
 .output-window {
-    height: 100%;
-    max-height: 400px;
-    overflow-y: scroll;
+    height: 100%; /* Make the output window fill the output container */
+    overflow-y: auto;
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #f8f9fa;
 }
+
 .container {
     margin-top: 2rem;
 }
-.row {
-    display: flex;
-    flex-wrap: nowrap;
+
+.card {
+    margin-bottom: 0.5rem; /* Reduce the margin between cards */
 }
+
+.card-body p {
+    margin-bottom: 0.2rem; /* Reduce spacing between lines */
+}
+
+.row {
+    margin-left: -0.5rem; /* Adjust row spacing */
+    margin-right: -0.5rem; /* Adjust row spacing */
+}
+
+.col-md-6 {
+    padding-left: 0.5rem; /* Adjust column spacing */
+    padding-right: 0.5rem; /* Adjust column spacing */
+}
+
 .controls {
     flex: 0 0 33%;
     max-width: 33%;
-    margin-right: 4rem; /* Add space between controls and output */
+    margin-right: 1rem; /* Add space between controls and output */
 }
+
 .output {
-    max-width: 61.5%;
-    flex: 0 0 66%;
+    flex: 1;
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.text-success {
+    color: green !important;
+}
+
+.text-danger {
+    color: red !important;
 }
